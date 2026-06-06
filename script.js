@@ -36,7 +36,7 @@ document.querySelectorAll(".product-card").forEach((card) => {
   const name = card.querySelector("h3").innerText;
 
   const price = parseFloat(
-    card.querySelector(".price").innerText.replace("$", ""),
+    card.querySelector(".price").textContent.replace("EGP", ""),
   );
 
   const image = card.querySelector("img").src;
@@ -122,7 +122,7 @@ function renderCart() {
     `;
   });
 
-  totalPrice.textContent = "$" + total.toFixed(2);
+  totalPrice.textContent = total.toFixed(2) + "EGP";
 
   updateBadges();
 }
@@ -374,3 +374,52 @@ function clearWishlist() {
 
   renderWishlist();
 }
+
+const langSwitcher = document.getElementById("langSwitcher");
+const langCode = document.getElementById("langCode");
+
+let currentLang = localStorage.getItem("language") || "en";
+
+changeLanguage(currentLang);
+
+langSwitcher.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "ar" : "en";
+
+  changeLanguage(currentLang);
+});
+
+function changeLanguage(lang) {
+  document.documentElement.lang = lang;
+
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en]").forEach((el) => {
+    el.textContent = el.dataset[lang];
+  });
+
+  document.querySelectorAll("[data-en-placeholder]").forEach((el) => {
+    el.placeholder = el.getAttribute(`data-${lang}-placeholder`);
+  });
+
+  langCode.textContent = lang === "ar" ? "ع" : "E";
+
+  localStorage.setItem("language", lang);
+}
+
+document.getElementById("orderBtn").addEventListener("click", () => {
+  if (cart.length === 0) {
+    alert("Cart is Empty");
+
+    return;
+  }
+
+  let message = "🛒 New Order:%0A%0A";
+
+  cart.forEach((item) => {
+    message += `• ${item.name} x${item.qty} - ${item.price} EGP%0A`;
+  });
+
+  message += `%0A💰 Total: ${totalPrice.textContent}`;
+
+  window.open(`https://wa.me/+201019774807?text=${message}`, "_blank");
+});

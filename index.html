@@ -14,13 +14,6 @@
 
     <!-- CSS -->
 
-    <link
-      class="bbb"
-      rel="icon"
-      type="image/x-icon"
-      href="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/561733367_2651387055197126_5362472621337849725_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LS4P9kOSH0sQ7kNvwEN7WWK&_nc_oc=AdrzJ5EOE9gsvyvVtOw2l2uPRIJerkIMiITYYk6pqu7pkrLy-rVOt3h0aWd8Pjolqu8&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=sChMZj7mYrav3RAW0EbpKg&_nc_ss=7b2a8&oh=00_Af69kZS_Dbj9K1rmQnL_TbY7FLmFhDrdYdLbslBTeK__Vg&oe=6A20B22C"
-    />
-
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Font -->
@@ -39,11 +32,7 @@
 
     <!-- Favicon -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/561733367_2651387055197126_5362472621337849725_n.jpg"
-    />
+    <link rel="icon" type="image/png" href="./logo.PNG" />
   </head>
 
   <body>
@@ -55,18 +44,14 @@
       <nav class="navbar">
         <!-- Logo Image -->
 
-        <img
-          class="logoo"
-          src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/1f9e77a0c2d4017d3ce867ff2a2ddf49~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=82a4b54e&x-expires=1780430400&x-signature=g%2BME4XGTHGsEcYZD%2Fc1oV35hQEU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my"
-          alt="Dragon Logo"
-        />
+        <img class="logoo" src="./logo.PNG" alt="Dragon Logo" />
 
         <!-- Brand -->
 
         <div class="logo">
           <span>DRAGON</span>
           For
-          <span>Clothes</span>
+          <span> Clothes</span>
         </div>
 
         <!-- Mobile Menu -->
@@ -79,23 +64,31 @@
 
         <ul class="nav-links">
           <li>
-            <a href="#home"> Home </a>
+            <a href="#home" data-en="Home" data-ar="الرئيسية"> Home </a>
           </li>
 
           <li>
-            <a href="#categories"> Categories </a>
+            <a href="#categories" data-en="Categories" data-ar="الأقسام">
+              Categories
+            </a>
           </li>
 
           <li>
-            <a href="#products"> Products </a>
+            <a href="#products" data-en="Products" data-ar="المنتجات">
+              Products
+            </a>
           </li>
 
           <li>
-            <a href="#reviews"> Reviews </a>
+            <a href="#reviews" data-en="Reviews" data-ar="التقييمات">
+              Reviews
+            </a>
           </li>
 
           <li>
-            <a href="#contact"> Contact </a>
+            <a href="#contact" data-en="Contact" data-ar="تواصل معنا">
+              Contact
+            </a>
           </li>
         </ul>
 
@@ -112,6 +105,12 @@
             />
 
             <i class="fas fa-search"></i>
+          </div>
+
+          <div class="lang-switcher" id="langSwitcher">
+            <span class="lang-code" id="langCode"> E </span>
+
+            <i class="fas fa-language"></i>
           </div>
 
           <!-- Wishlist -->
@@ -139,11 +138,28 @@
 
     <section class="hero" id="home">
       <div class="hero-content">
-        <h1 class="ccc">NEW TREND COLLECTION 2026</h1>
+        <h1
+          class="ccc"
+          data-en="NEW TREND COLLECTION 2026"
+          data-ar="تشكيلة الموضة الجديدة 2026"
+        >
+          NEW TREND COLLECTION 2026
+        </h1>
 
-        <p>✨🏅Premium Fashion For Men 🏅✨</p>
-
-        <a href="#products" class="hero-btn"> Shop Now </a>
+        <p
+          data-en="✨🏅Premium Fashion For Men 🏅✨"
+          data-ar="✨🏅أزياء رجالية فاخرة 🏅✨"
+        >
+          ✨🏅Premium Fashion For Men 🏅✨
+        </p>
+        <a
+          href="#products"
+          class="hero-btn"
+          data-en="Shop Now"
+          data-ar="تسوق الآن"
+        >
+          Shop Now
+        </a>
       </div>
     </section>
 
@@ -152,43 +168,31 @@
     =========================== -->
 
     <section class="categories" id="categories">
-      <h2 class="section-title">Shop By Category</h2>
+      <h2
+        class="section-title"
+        data-en="Shop By Category"
+        data-ar="تسوق حسب الفئة"
+      >
+        Shop By Category
+      </h2>
 
       <div class="category-grid">
         <div class="category-card">
-          <img
-            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
-            alt="T-Shirts"
-          />
+          <img src="./10.PNG" alt="T-Shirts" />
 
-          <h3>T-Shirts</h3>
+          <h3 data-en="T-Shirts" data-ar="تي شيرتات">T-Shirts</h3>
         </div>
 
         <div class="category-card">
-          <img
-            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf"
-            alt="Jackets"
-          />
+          <img src="./50.PNG" alt="Jackets" />
 
-          <h3>Jackets</h3>
+          <h3 data-en="Polo Shirt" data-ar="قميص بولو">Polo Shirt</h3>
         </div>
 
         <div class="category-card">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
-            alt="Hoodies"
-          />
+          <img src="./55.PNG" alt="" />
 
-          <h3>Hoodies</h3>
-        </div>
-
-        <div class="category-card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQG8i9K4I9VnNal1QyqyS-z8IIAr8323xRngZpjvSHBIuVf6MrzUqaAE-DBXrMhkyFjdskLfoYa1_5ynhNQpn2QPNueiEwo7a4ycauvT9337eBsYYLLEtkv&usqp=CAc"
-            alt="Women Fashion"
-          />
-
-          <h3>Pants</h3>
+          <h3 data-en="Pants" data-ar="بناطيل">Pants</h3>
         </div>
       </div>
     </section>
@@ -198,8 +202,13 @@
     =========================== -->
 
     <section class="products" id="products">
-      <h2 class="section-title">Trending Products</h2>
-
+      <h2
+        class="section-title"
+        data-en="Trending Products"
+        data-ar="المنتجات الرائجة"
+      >
+        Trending Products
+      </h2>
       <div class="products-grid">
         <!-- Product 1 -->
 
@@ -209,12 +218,23 @@
           <img src="./10.PNG" alt="Oversized T-Shirt" />
 
           <div class="product-info">
-            <h3>Oversized T-Shirt</h3>
+            <h3
+              data-en="Men's Polo Shirt (ITALIA)"
+              data-ar="قميص بولو رجالي (إيطاليا)"
+            >
+              Men's Polo Shirt (ITALIA)
+            </h3>
 
-            <p class="price">29 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -231,12 +251,20 @@
           <img src="./6.PNG" alt="Luxury Hoodie" />
 
           <div class="product-info">
-            <h3>Luxury Hoodie</h3>
+            <h3 data-en="knitted polo shirt" data-ar="تيشيرت بولو تريكو">
+              knitted polo shirt
+            </h3>
 
-            <p class="price">59 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -253,12 +281,23 @@
           <img src="./8.PNG" alt="Modern Jacket" />
 
           <div class="product-info">
-            <h3>Modern Jacket</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (Black)"
+              data-ar="بنطلون وايد ليج ميلتون (أسود)"
+            >
+              Melton Wide Leg Pants (Black)
+            </h3>
 
-            <p class="price">89 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -275,12 +314,23 @@
           <img src="./9.PNG" alt="Streetwear Set" />
 
           <div class="product-info">
-            <h3>Streetwear Set</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (Beige)"
+              data-ar="بنطلون وايد ليج ميلتون (بيج)"
+            >
+              Melton Wide Leg Pants (Beige)
+            </h3>
 
-            <p class="price">79 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -297,12 +347,23 @@
           <img src="./11.PNG" alt="Streetwear Set" />
 
           <div class="product-info">
-            <h3>Streetwear Set</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (Gray)"
+              data-ar="بنطلون وايد ليج ميلتون (رصاصي)"
+            >
+              Melton Wide Leg Pants (Gray)
+            </h3>
 
-            <p class="price">79 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -319,12 +380,23 @@
           <img src="./12.PNG" alt="Streetwear Set" />
 
           <div class="product-info">
-            <h3>Streetwear Set</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (Nike)"
+              data-ar="بنطلون وايد ليج ميلتون (نايكي)"
+            >
+              Melton Wide Leg Pants (Nike)
+            </h3>
 
-            <p class="price">79 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -341,12 +413,23 @@
           <img src="./13.PNG" alt="Streetwear Set" />
 
           <div class="product-info">
-            <h3>Streetwear Set</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (White)"
+              data-ar="بنطلون وايد ليج ميلتون (أبيض)"
+            >
+              Melton Wide Leg Pants (White)
+            </h3>
 
-            <p class="price">79 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -360,15 +443,23 @@
         <div class="product-card">
           <span class="sale"> TREND </span>
 
-          <img src="./18.PNG" alt="Premium Dress" />
+          <img src="./60.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="T-Shirt alo (Black)" data-ar="تيشيرت alo (أسود)">
+              T-Shirt alo (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -384,12 +475,23 @@
           <img src="./19.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Oversized T-shirt (Beige)"
+              data-ar="تيشيرت أوفر سايز (بيج)"
+            >
+              Oversized T-shirt (Beige)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -402,15 +504,23 @@
         <div class="product-card">
           <span class="sale"> TREND </span>
 
-          <img src="./19.PNG" alt="Premium Dress" />
+          <img src="./50.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="Polo Shirt (Black)" data-ar="قميص بولو (أسود)">
+              Polo Shirt (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -426,12 +536,20 @@
           <img src="./20.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="T-Shirt (Brown)" data-ar="تيشيرت (بني)">
+              T-Shirt (Brown)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -447,12 +565,20 @@
           <img src="./21.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="T-Shirt (navy blue)" data-ar="تيشيرت (كحلي)">
+              T-Shirt (navy blue)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -468,12 +594,23 @@
           <img src="./25.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="T-Shirt Oversized (Black)"
+              data-ar="تيشيرت أوفر سايز (أسود)"
+            >
+              T-Shirt Oversized (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -489,12 +626,23 @@
           <img src="./23.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Oversized T-Shirt {2} (Black)"
+              data-ar="أوفر سايز تيشيرت {2} (أسود)"
+            >
+              Oversized T-Shirt {2} (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -510,12 +658,23 @@
           <img src="./24.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Oversized T-Shirt {3} (White)"
+              data-ar="أوفر سايز تيشيرت {3} (أبيض)"
+            >
+              Oversized T-Shirt (White)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -523,20 +682,114 @@
             </div>
           </div>
         </div>
+
+        <div class="product-card">
+          <span class="sale"> TREND </span>
+
+          <img src="./55.PNG" alt="Premium Dress" />
+
+          <div class="product-info">
+            <h3 data-en="Wide-Leg Jeans (Black)" data-ar="وايد ليج جينز (أسود)">
+              Wide-Leg Jeans (Black)
+            </h3>
+
+            <p class="price">500 EGP</p>
+
+            <div class="actions">
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
+
+              <button class="wish-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="sale"> TREND </span>
+
+          <img src="./65.PNG" alt="Premium Dress" />
+
+          <div class="product-info">
+            <h3
+              data-en="Wide-Leg Jeans (navy blue)"
+              data-ar="وايد ليج جينز (كحلي)"
+            >
+              Wide-Leg Jeans (navy blue)
+            </h3>
+
+            <p class="price">500 EGP</p>
+
+            <div class="actions">
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
+
+              <button class="wish-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="sale"> TREND </span>
+
+          <img src="./70.PNG" alt="Premium Dress" />
+
+          <div class="product-info">
+            <h3 data-en="Wide-Leg Jeans (snowy)" data-ar="وايد ليج جينز (ثلجي)">
+              Wide-Leg Jeans (snowy)
+            </h3>
+
+            <p class="price">500 EGP</p>
+
+            <div class="actions">
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
+
+              <button class="wish-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- Product 5 -->
 
         <div class="product-card">
           <span class="sale"> TREND </span>
 
-          <img src="./26.PNG" alt="Premium Dress" />
+          <img src="./26.PNG" alt="" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="Polo Shirt (Brown)" data-ar="قميص بولو (بني)">
+              Polo Shirt (Brown)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -552,12 +805,23 @@
           <img src="./27.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Gage Wordmark Men's T-Shirt (Black)"
+              data-ar="تيشيرت غيج ووردمارك للرجال"
+            >
+              Gage Wordmark Men's T-Shirt (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -573,12 +837,23 @@
           <img src="./28.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="T-shirt LOUIS VUITTON PARIS (Brown)"
+              data-ar="تيشيرت لويس فويتون باريس (بني)"
+            >
+              T-shirt LOUIS VUITTON PARIS (Brown)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -595,12 +870,23 @@
           <img src="./14.PNG" alt="Streetwear Set" />
 
           <div class="product-info">
-            <h3>Streetwear Set</h3>
+            <h3
+              data-en="Wide Leg Sweatpants Essentials Fear of God"
+              data-ar="بنطلون رياضي وايد ليج من Essentials Fear of God"
+            >
+              Wide Leg Sweatpants Essentials Fear of God
+            </h3>
 
-            <p class="price">79 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -617,12 +903,23 @@
           <img src="./29.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="T-Shirt Oversized (orange)"
+              data-ar="تيشيرت أوفر سايز (برتقالي)"
+            >
+              T-Shirt Oversized (orange)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -639,12 +936,23 @@
           <img src="./30.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="T-Shirt Oversized (Black)"
+              data-ar="تيشيرت أوفر سايز (أسود)"
+            >
+              T-Shirt Oversized (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -661,12 +969,23 @@
           <img src="./31.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Streetwear T-shirt (White)"
+              data-ar="تيشيرت الشارع الشهير (أبيض)"
+            >
+              Streetwear T-shirt (White)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -677,17 +996,25 @@
         <!-- Product 5 -->
 
         <div class="product-card">
-          <span class="sale"> TREND </span>
+          <span class="sale"> NEW </span>
 
-          <img src="./32.PNG" alt="Premium Dress" />
+          <img src="./80.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="Striped T-shirt" data-ar="تيشيرت مخطط">
+              Striped T-shirt
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -703,12 +1030,23 @@
           <img src="./33.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Polo Shirt Smart Casual (White)"
+              data-ar="قميص بولو أنيق وعصري (أبيض)"
+            >
+              Polo Shirt Smart Casual (White)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -724,12 +1062,20 @@
           <img src="./34.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="Oversized T-shirt" data-ar="تيشيرت أوفر سايز">
+              Oversized T-shirt
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -745,12 +1091,20 @@
           <img src="./35.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3 data-en="Wide-leg Sweatpants" data-ar="بنطلون وايد ليج رياضي">
+              Wide-leg Sweatpants
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -766,12 +1120,23 @@
           <img src="./36.PNG" alt="Premium Dress" />
 
           <div class="product-info">
-            <h3>Premium Dress</h3>
+            <h3
+              data-en="Washed Oversized T-shirt (Black)"
+              data-ar="تيشيرت أوفر سايز مغسول (أسود)"
+            >
+              Washed Oversized T-shirt (Black)
+            </h3>
 
-            <p class="price">99 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -788,12 +1153,23 @@
           <img src="./16.PNG" alt="Luxury Hoodie" />
 
           <div class="product-info">
-            <h3>Luxury Hoodie</h3>
+            <h3
+              data-en="Melton Wide Leg Pants {2} (Gray)"
+              data-ar="بنطلون وايد ليج ميلتون {2} (رصاصي)"
+            >
+              Melton Wide Leg Pants {2} (Gray)
+            </h3>
 
-            <p class="price">59 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -810,12 +1186,23 @@
           <img src="./37.PNG" alt="Luxury Hoodie" />
 
           <div class="product-info">
-            <h3>Luxury Hoodie</h3>
+            <h3
+              data-en="Raglan T-shirt (Black ❌ White)"
+              data-ar="تيشيرت راجلان (أسود ❌ أبيض)"
+            >
+              Raglan T-shirt (Black ❌ White)
+            </h3>
 
-            <p class="price">59 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -832,12 +1219,23 @@
           <img src="./15.PNG" alt="Casual Outfit" />
 
           <div class="product-info">
-            <h3>Casual Outfit</h3>
+            <h3
+              data-en="Melton Wide Leg Pants (alo)"
+              data-ar="بنطلون وايد ليج ميلتون (alo)"
+            >
+              Melton Wide Leg Pants (alo)
+            </h3>
 
-            <p class="price">65 EGP</p>
+            <p class="price">500 EGP</p>
 
             <div class="actions">
-              <button class="cart-btn">Add To Cart</button>
+              <button
+                class="cart-btn"
+                data-en="Add To Cart"
+                data-ar="أضف للسلة"
+              >
+                Add To Cart
+              </button>
 
               <button class="wish-btn">
                 <i class="fas fa-heart"></i>
@@ -854,11 +1252,23 @@
 
     <section class="offer">
       <div class="offer-content">
-        <h2>Summer Sale</h2>
+        <h2 data-en="Summer Sale" data-ar="تخفيضات الصيف">Summer Sale</h2>
 
-        <p>Up To 50% OFF On Selected Items</p>
+        <p
+          data-en="Up To 50% OFF On Selected Items"
+          data-ar="خصومات تصل إلى 50% على منتجات مختارة"
+        >
+          Up To 50% OFF On Selected Items
+        </p>
 
-        <a href="#products" class="offer-btn"> Explore Now </a>
+        <a
+          href="#products"
+          class="offer-btn"
+          data-en="Explore Now"
+          data-ar="اكتشف الآن"
+        >
+          Explore Now
+        </a>
       </div>
     </section>
 
@@ -867,25 +1277,46 @@
     =========================== -->
 
     <section class="reviews" id="reviews">
-      <h2 class="section-title">Customer Reviews</h2>
+      <h2
+        class="section-title"
+        data-en="Customer Reviews"
+        data-ar="آراء العملاء"
+      >
+        Customer Reviews
+      </h2>
 
       <div class="reviews-grid">
         <div class="review-card">
           <h3>Ahmed</h3>
 
-          <p>Excellent quality and fast delivery.</p>
+          <p
+            data-en="Excellent quality and fast delivery."
+            data-ar="جودة ممتازة وتوصيل سريع."
+          >
+            Excellent quality and fast delivery.
+          </p>
         </div>
 
         <div class="review-card">
           <h3>Mohamed</h3>
 
-          <p>Best online fashion store I've tried.</p>
+          <p
+            data-en="Best online fashion store I've tried"
+            data-ar="أفضل متجر أزياء على الإنترنت جربته."
+          >
+            Excellent quality and fast delivery.
+          </p>
         </div>
 
         <div class="review-card">
           <h3>Sara</h3>
 
-          <p>Amazing products and premium design.</p>
+          <p
+            data-en="Amazing products and premium design."
+            data-ar="منتجات رائعة وتصميم فاخر."
+          >
+            Excellent quality and fast delivery.
+          </p>
         </div>
       </div>
     </section>
@@ -895,16 +1326,34 @@
     =========================== -->
 
     <section class="contact" id="contact">
-      <h2 class="section-title">Contact Us</h2>
+      <h2 class="section-title" data-en="Contact Us" data-ar="تواصل معنا">
+        Contact Us
+      </h2>
 
       <form>
-        <input type="text" placeholder="Your Name" />
+        <input
+          type="text"
+          placeholder="Your Name"
+          data-en-placeholder="Your Name"
+          data-ar-placeholder="اسمك"
+        />
 
-        <input type="email" placeholder="Your Email" />
+        <input
+          type="email"
+          placeholder="Your Email"
+          data-en-placeholder="Your Email"
+          data-ar-placeholder="بريدك الإلكتروني"
+        />
 
-        <textarea placeholder="Your Message"></textarea>
+        <textarea
+          placeholder="Your Message"
+          data-en-placeholder="Your Message"
+          data-ar-placeholder="رسالتك"
+        ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" data-en="Send Message" data-ar="إرسال الرسالة">
+          Send Message
+        </button>
       </form>
     </section>
 
@@ -924,8 +1373,18 @@
       <div class="cart-footer">
         <h3>
           Total :
-          <span id="totalPrice"> $0 </span>
+          <span id="totalPrice"> EGP0 </span>
         </h3>
+
+        <button
+          id="orderBtn"
+          class="order-btn"
+          data-en="Order Now"
+          data-ar="اطلب الآن"
+        >
+          <i class="fab fa-whatsapp"></i>
+          Order Now
+        </button>
       </div>
     </div>
 
@@ -955,27 +1414,36 @@
 
         <div class="socials">
           <a
-            class="qqq"
+            class="media"
             href="https://www.facebook.com/profile.php?id=61581933823203"
             target="_blank"
           >
             <i class="fab fa-facebook-f"></i>
           </a>
 
-          <a class="qqq" href="https://instagram.com/" target="_blank">
-            <i class="fab fa-instagram"></i>
+          <a
+            class="media"
+            href="https://www.messenger.com/t/849336718259570"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-messenger"></i>
           </a>
 
           <a
-            class="qqq"
+            class="media"
             href="https://www.tiktok.com/@dragon4clothes"
             target="_blank"
           >
             <i class="fab fa-tiktok"></i>
           </a>
 
-          <a class="qqq" href="https://twitter.com/" target="_blank">
+          <a href="https://wa.me/+201019774807" class="media" target="_blank">
             <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://wa.me/+201019774807" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="wa-text">Chat Us</span>
           </a>
         </div>
 
@@ -992,7 +1460,7 @@
             href="https://youssefmohamedbar.github.io/Youssef-Bar-Creative-Developer/"
             target="_blank"
           >
-            Youssef Bar
+            ➡⏩Youssef Bar⏪⬅
           </a>
         </p>
       </div>

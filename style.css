@@ -329,25 +329,45 @@ ul {
 }
 
 .hero-content {
-  color: #fff;
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  color: white;
+
+  max-width: 900px;
 
   padding: 20px;
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
 
   font-weight: 800;
 
-  max-width: 900px;
+  line-height: 1.1;
 
-  margin: auto;
+  margin-bottom: 25px;
+
+}
+
+.hero-content h1 span {
+  color: #c7a76c;
 }
 
 .hero-content p {
-  margin: 20px 0;
+  font-size: 1.25rem;
 
-  font-size: 1.3rem;
+  opacity: 0.9;
+
+  margin-bottom: 35px;
+}
+
+.color{
+    color: #c7a76c;
+    font-family: cursive;
 }
 
 .hero-btn {
@@ -897,7 +917,7 @@ footer {
   gap: 20px;
 }
 
-.qqq {
+.media {
   color: #ddd;
 
   font-size: 1.5rem;
@@ -905,7 +925,7 @@ footer {
   transition: 0.3s;
 }
 
-.qqq:hover {
+.media:hover {
   color: #c7a76c;
 
   transform: translateY(-5px);
@@ -1239,4 +1259,229 @@ html[dir="rtl"] textarea {
 
 .order-btn:active {
   transform: scale(0.98);
+}
+
+.hero-btn.secondary {
+  background: transparent;
+
+  border: 2px solid white;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.feature-box {
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: #f8f8f8;
+  transition: 0.4s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box i {
+  font-size: 40px;
+  color: #c7a76c;
+  margin-bottom: 15px;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  padding: 10px 25px;
+
+  border: 1px solid #c7a76c;
+
+  border-radius: 50px;
+
+  margin-bottom: 25px;
+
+  color: #c7a76c;
+
+  font-weight: 600;
+}
+
+/* ==========================
+   PREMIUM TOP BUTTON
+========================== */
+
+:root {
+    --top-btn-bg: rgba(255,255,255,0.15);
+    --top-btn-text: #111;
+    --progress-color: #111;
+}
+
+body.dark-mode {
+    --top-btn-bg: rgba(0,0,0,0.7);
+    --top-btn-text: #fff;
+    --progress-color: #fff;
+}
+
+#topBtn {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 75px;
+    height: 75px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--top-btn-bg);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(25px) scale(.8);
+
+    transition: all .35s ease;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.15);
+}
+
+#topBtn.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0) scale(1);
+
+    animation: pulse 2.5s infinite;
+}
+
+#topBtn:hover {
+    transform: translateY(-8px) scale(1.08);
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,.15),
+        0 10px 40px rgba(0,0,0,.2);
+}
+
+.btn-content {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+}
+
+.lamp {
+    font-size: 22px;
+}
+
+.scroll-percent {
+    font-size: 12px;
+
+    color: var(--top-btn-text);
+
+    font-weight: 700;
+}
+
+/* دائرة التقدم */
+
+.progress-ring {
+    position: absolute;
+
+    transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+    fill: transparent;
+
+    stroke: rgba(255,255,255,.2);
+
+    stroke-width: 4;
+}
+
+.progress-ring-circle {
+    fill: transparent;
+
+    stroke: var(--progress-color);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 188.5;
+    stroke-dashoffset: 188.5;
+
+    transition: stroke-dashoffset .1s linear;
+}
+
+/* نبض خفيف */
+
+@keyframes pulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(255,255,255,.2);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 12px rgba(255,255,255,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(255,255,255,0);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    #topBtn {
+        width: 65px;
+        height: 65px;
+    }
+
+    .lamp {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #topBtn {
+        width: 58px;
+        height: 58px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .lamp {
+        font-size: 18px;
+    }
+
+    .scroll-percent {
+        font-size: 10px;
+    }
 }

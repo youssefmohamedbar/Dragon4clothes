@@ -50,8 +50,6 @@
 
         <div class="logo">
           <span>DRAGON</span>
-          For
-          <span> Clothes</span>
         </div>
 
         <!-- Mobile Menu -->
@@ -131,35 +129,99 @@
         </div>
       </nav>
     </header>
+    <br>
 
     <!-- ==========================
          HERO SECTION
     =========================== -->
 
     <section class="hero" id="home">
-      <div class="hero-content">
-        <h1
-          class="ccc"
-          data-en="NEW TREND COLLECTION 2026"
-          data-ar="تشكيلة الموضة الجديدة 2026"
-        >
-          NEW TREND COLLECTION 2026
-        </h1>
+            <div class="hero-overlay"></div>
 
-        <p
-          data-en="✨🏅Premium Fashion For Men 🏅✨"
-          data-ar="✨🏅أزياء رجالية فاخرة 🏅✨"
+      <div class="hero-content">
+
+        <span class="hero-tag" data-en="NEW COLLECTION 2026" data-ar="تشكيلة الموضة الجديدة 2026"> NEW COLLECTION 2026 </span>
+
+        <h1 
+data-en="Elevate Your Style"
+data-ar="ارتقِ بأناقتك"
         >
-          ✨🏅Premium Fashion For Men 🏅✨
+          Elevate Your Style
+
+        </h1>
+        <h1 class="color" data-en="with Dragon" data-ar="مع دراجون">with Dragon</h1>
+
+
+        <p 
+        data-en="Premium Streetwear Designed For Modern Men. Discover Luxury, Comfort & Confidence."
+        data-ar="الملابس الفاخرة المصممة للرجل العصري. اكتشف الفخامة والراحة والثقة."
+        >
+          Premium Streetwear Designed For Modern Men. Discover Luxury, Comfort &
+          Confidence.
         </p>
-        <a
-          href="#products"
-          class="hero-btn"
-          data-en="Shop Now"
-          data-ar="تسوق الآن"
-        >
-          Shop Now
-        </a>
+
+        <div class="hero-buttons">
+          <a href="#products" class="hero-btn" data-en="Shop Now"  data-ar="تسوق الآن"> Shop Now </a>
+<Br></Br>
+          <a href="#categories" class="hero-btn secondary" data-en="Explore Collection" data-ar="استكشف المجموعة">
+            Explore Collection
+          </a>
+        </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <i class="fas fa-truck"></i>  
+        <h3
+        data-en="Fast Delivery"
+        data-ar="توصيل سريع"
+        
+        >Fast Delivery</h3>
+        <p
+        data-en="Delivery all over Egypt"
+        data-ar="التوصيل إلى جميع أنحاء مصر"
+        >Delivery all over Egypt</p>
+      </div>
+
+      <div class="feature-box">
+        <i class="fas fa-shield-alt"></i>
+        <h3
+        data-en="Secure Shopping"
+        data-ar="تسوق آمن"
+        >Secure Shopping</h3>
+        <p
+                data-en="Safe & Trusted Store"
+        data-ar="متجر آمن وموثوق"
+
+        >Safe & Trusted Store</p>
+      </div>
+
+      <div class="feature-box">
+        <i class="fas fa-undo"></i>
+        <h3
+                data-en="Easy Return"
+        data-ar="إرجاع سهل"
+
+        >Easy Return</h3>
+        <p
+                data-en="Return within 14 days"
+        data-ar="قم بالإرجاع خلال 14 يومًا"
+
+        >Return within 14 days</p>
+      </div>
+
+      <div class="feature-box">
+        <i class="fas fa-star"></i>
+        <h3
+                data-en="Premium Quality"
+        data-ar="جودة ممتازة"
+
+        >Premium Quality</h3>
+        <p
+                data-en="Best fabrics & materials"
+        data-ar="أفضل الأقمشة والمواد"
+
+        >Best fabrics & materials</p>
       </div>
     </section>
 
@@ -1330,32 +1392,44 @@
         Contact Us
       </h2>
 
-      <form>
-        <input
-          type="text"
-          placeholder="Your Name"
-          data-en-placeholder="Your Name"
-          data-ar-placeholder="اسمك"
-        />
+<form id="contactForm">
+  <input
+    type="text"
+    id="name"
+    placeholder="Your Name"
+    data-en-placeholder="Your Name"
+    data-ar-placeholder="الاسم"
+    required
+  />
 
-        <input
-          type="email"
-          placeholder="Your Email"
-          data-en-placeholder="Your Email"
-          data-ar-placeholder="بريدك الإلكتروني"
-        />
+  <input
+    type="email"
+    id="email"
+    placeholder="Your Email"
+    data-en-placeholder="Your Email"
+    data-ar-placeholder="البريد الإلكتروني"
+    required
+  />
 
-        <textarea
-          placeholder="Your Message"
-          data-en-placeholder="Your Message"
-          data-ar-placeholder="رسالتك"
-        ></textarea>
+  <textarea
+    id="message"
+    placeholder="Your Message"
+    data-en-placeholder="Your inquiry"
+    data-ar-placeholder="اكتب استفسارك"
+    required
+  ></textarea>
 
-        <button type="submit" data-en="Send Message" data-ar="إرسال الرسالة">
-          Send Message
-        </button>
-      </form>
-    </section>
+  <button
+    type="submit"
+    class="send-btn"
+    data-en="Send Message"
+    data-ar="إرسال الرسالة"
+  >
+    Send Message
+  </button>
+</form>
+
+</section>
 
     <!-- ==========================
          CART SIDEBAR
@@ -1470,7 +1544,27 @@
 
     <div class="menu-overlay"></div>
 
-    <!-- JS -->
+<!-- Back To Top Premium Button -->
+<button id="topBtn" aria-label="Back To Top">
+
+    <svg class="progress-ring" width="70" height="70">
+        <circle class="progress-ring-bg" cx="35" cy="35" r="30"></circle>
+
+        <circle class="progress-ring-circle" cx="35" cy="35" r="30"></circle>
+    </svg>
+
+    <div class="btn-content">
+
+        <span class="lamp">↑</span>
+
+        <span class="scroll-percent">0%</span>
+
+    </div>
+
+</button>
+
+<!-- JS -->
+
 
     <script src="script.js"></script>
   </body>

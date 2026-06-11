@@ -423,3 +423,91 @@ document.getElementById("orderBtn").addEventListener("click", () => {
 
   window.open(`https://wa.me/+201019774807?text=${message}`, "_blank");
 });
+
+/* ==========================
+   PREMIUM TOP BUTTON
+========================== */
+
+const topBtn = document.getElementById("topBtn");
+
+const progressCircle = document.querySelector(".progress-ring-circle");
+
+const percentText = document.querySelector(".scroll-percent");
+
+const radius = 30;
+
+const circumference = 2 * Math.PI * radius;
+
+progressCircle.style.strokeDasharray = circumference;
+
+progressCircle.style.strokeDashoffset = circumference;
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+  const progress = Math.round((scrollTop / docHeight) * 100);
+
+  if (scrollTop > 400) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+
+  percentText.textContent = `${progress}%`;
+
+  const offset = circumference - (progress / 100) * circumference;
+
+  progressCircle.style.strokeDashoffset = offset;
+});
+
+/* الرجوع للأعلى */
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+
+    behavior: "smooth",
+  });
+});
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const isArabic = document.documentElement.lang === "ar";
+
+    let whatsappMessage = "";
+
+    if (isArabic) {
+      whatsappMessage =
+        `📩 طلب جديد من متجر Dragon For Clothes\n\n` +
+        `👤 الاسم: ${name}\n` +
+        `📧 البريد الإلكتروني: ${email}\n` +
+        `💬 الاستفسار:\n${message}`;
+    } else {
+      whatsappMessage =
+        `📩 New Message From Dragon For Clothes\n\n` +
+        `👤 Name: ${name}\n` +
+        `📧 Email: ${email}\n` +
+        `💬 Message:\n${message}`;
+    }
+
+    const phoneNumber = "201019774807";
+
+    const whatsappURL =
+      `https://wa.me/${phoneNumber}?text=` +
+      encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+    contactForm.reset();
+  });
+}
